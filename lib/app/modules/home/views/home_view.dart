@@ -56,7 +56,8 @@ class HomeView extends GetView<HomeController> {
                             ),
                             InkWell(
                               onTap: () {
-                                controller.scaffoldKey.currentState!.openDrawer();
+                                controller.scaffoldKey.currentState!
+                                    .openDrawer();
                               },
                               child: Icon(
                                 Icons.menu,

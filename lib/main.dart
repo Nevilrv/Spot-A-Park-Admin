@@ -54,7 +54,7 @@ getData() async {
           .savePassword(adminModel.password.toString());
       Constant.isDemo = adminModel.isDemo!;
     } else {
-      adminModel.email = "admin@parkeasy.com";
+      adminModel.email = "admin@gmail.com";
       adminModel.password = "123456";
       adminModel.name = "Spot A Park";
       FirebaseFirestore.instance

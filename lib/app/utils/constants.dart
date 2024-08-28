@@ -12,7 +12,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:intl/intl.dart';
 
 class Constant {
-  static ConstantModel? constantModel;
+  static ConstantModel constantModel = ConstantModel();
   static PaymentModel? paymentModel;
   static UserModel? userModel;
   static CurrencyModel? currencyModel;

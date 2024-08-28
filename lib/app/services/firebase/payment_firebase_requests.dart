@@ -37,11 +37,11 @@ Future<bool> setPayment(PaymentModel paymentModel) {
   });
 }
 
-Future<bool> setPayment1(Wallet paymentModel) {
+Future<bool> setPayment1(Map<String, dynamic> data) {
   return FirebaseFirestore.instance
       .collection(CollectionName.settings)
       .doc("payment")
-      .update(paymentModel.toJson())
+      .update(data)
       .then(
     (value) {
       return true;
