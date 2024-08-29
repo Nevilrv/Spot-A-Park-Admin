@@ -57,68 +57,70 @@ class LoginPageView extends GetView<LoginPageController> {
                     },
                   ),
                   const SizedBox(height: 14),
-                  // Card(
-                  //   elevation: 10,
-                  //   child: Padding(
-                  //     padding: const EdgeInsets.all(8.0),
-                  //     child: Column(
-                  //       mainAxisAlignment: MainAxisAlignment.start,
-                  //       crossAxisAlignment: CrossAxisAlignment.start,
-                  //       children: [
-                  //         Text(
-                  //           "Credentials : ",
-                  //           style: GoogleFonts.poppins(
-                  //             fontSize: 14,
-                  //             fontWeight: FontWeight.bold,
-                  //           ),
-                  //         ),
-                  //         const SizedBox(height: 2),
-                  //         Row(
-                  //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  //           crossAxisAlignment: CrossAxisAlignment.center,
-                  //           children: [
-                  //             Text(
-                  //               "Email : ${controller.email.value}",
-                  //               style: GoogleFonts.poppins(
-                  //                 fontSize: 14,
-                  //                 fontWeight: FontWeight.w300,
-                  //               ),
-                  //             ),
-                  //             InkWell(
-                  //                 onTap: () async {
-                  //                   await Clipboard.setData(ClipboardData(text: controller.email.value));
-                  //                 },
-                  //                 child: const Icon(
-                  //                   Icons.copy,
-                  //                   size: 14,
-                  //                 ))
-                  //           ],
-                  //         ),
-                  //         Row(
-                  //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  //           crossAxisAlignment: CrossAxisAlignment.center,
-                  //           children: [
-                  //             Text(
-                  //               "Password : ${controller.password.value}",
-                  //               style: GoogleFonts.poppins(
-                  //                 fontSize: 14,
-                  //                 fontWeight: FontWeight.w300,
-                  //               ),
-                  //             ),
-                  //             InkWell(
-                  //                 onTap: () async {
-                  //                   await Clipboard.setData(ClipboardData(text: controller.password.value));
-                  //                 },
-                  //                 child: const Icon(
-                  //                   Icons.copy,
-                  //                   size: 14,
-                  //                 ))
-                  //           ],
-                  //         ),
-                  //       ],
-                  //     ),
-                  //   ),
-                  // )
+                  Card(
+                    elevation: 10,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Credentials : ",
+                            style: GoogleFonts.poppins(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(height: 2),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Email : ${controller.email.value}",
+                                style: GoogleFonts.poppins(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                              InkWell(
+                                  onTap: () async {
+                                    await Clipboard.setData(ClipboardData(
+                                        text: controller.email.value));
+                                  },
+                                  child: const Icon(
+                                    Icons.copy,
+                                    size: 14,
+                                  ))
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Password : ${controller.password.value}",
+                                style: GoogleFonts.poppins(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                              InkWell(
+                                  onTap: () async {
+                                    await Clipboard.setData(ClipboardData(
+                                        text: controller.password.value));
+                                  },
+                                  child: const Icon(
+                                    Icons.copy,
+                                    size: 14,
+                                  ))
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
                 ]),
           ),
         ),
@@ -160,70 +162,70 @@ class LoginPageView extends GetView<LoginPageController> {
                     },
                   ),
                   const SizedBox(height: 14),
-                  // Card(
-                  //   elevation: 10,
-                  //   child: Padding(
-                  //     padding: const EdgeInsets.all(8.0),
-                  //     child: Column(
-                  //       mainAxisAlignment: MainAxisAlignment.start,
-                  //       crossAxisAlignment: CrossAxisAlignment.start,
-                  //       children: [
-                  //         Text(
-                  //           "Credentials : ",
-                  //           style: GoogleFonts.poppins(
-                  //             fontSize: 14,
-                  //             fontWeight: FontWeight.bold,
-                  //           ),
-                  //         ),
-                  //         const SizedBox(height: 2),
-                  //         Row(
-                  //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  //           crossAxisAlignment: CrossAxisAlignment.center,
-                  //           children: [
-                  //             Text(
-                  //               "Email : ${controller.email.value}",
-                  //               style: GoogleFonts.poppins(
-                  //                 fontSize: 14,
-                  //                 fontWeight: FontWeight.w300,
-                  //               ),
-                  //             ),
-                  //             InkWell(
-                  //                 onTap: () async {
-                  //                   await Clipboard.setData(ClipboardData(
-                  //                       text: controller.email.value));
-                  //                 },
-                  //                 child: const Icon(
-                  //                   Icons.copy,
-                  //                   size: 14,
-                  //                 ))
-                  //           ],
-                  //         ),
-                  //         Row(
-                  //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  //           crossAxisAlignment: CrossAxisAlignment.center,
-                  //           children: [
-                  //             Text(
-                  //               "Password : ${controller.password.value}",
-                  //               style: GoogleFonts.poppins(
-                  //                 fontSize: 14,
-                  //                 fontWeight: FontWeight.w300,
-                  //               ),
-                  //             ),
-                  //             InkWell(
-                  //                 onTap: () async {
-                  //                   await Clipboard.setData(ClipboardData(
-                  //                       text: controller.password.value));
-                  //                 },
-                  //                 child: const Icon(
-                  //                   Icons.copy,
-                  //                   size: 14,
-                  //                 ))
-                  //           ],
-                  //         ),
-                  //       ],
-                  //     ),
-                  //   ),
-                  // )
+                  Card(
+                    elevation: 10,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Credentials : ",
+                            style: GoogleFonts.poppins(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(height: 2),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Email : ${controller.email.value}",
+                                style: GoogleFonts.poppins(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                              InkWell(
+                                  onTap: () async {
+                                    await Clipboard.setData(ClipboardData(
+                                        text: controller.email.value));
+                                  },
+                                  child: const Icon(
+                                    Icons.copy,
+                                    size: 14,
+                                  ))
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Password : ${controller.password.value}",
+                                style: GoogleFonts.poppins(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                              InkWell(
+                                  onTap: () async {
+                                    await Clipboard.setData(ClipboardData(
+                                        text: controller.password.value));
+                                  },
+                                  child: const Icon(
+                                    Icons.copy,
+                                    size: 14,
+                                  ))
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
                 ]),
           ),
         ),
@@ -279,76 +281,76 @@ class LoginPageView extends GetView<LoginPageController> {
                         },
                       ),
                       const SizedBox(height: 14),
-                      // Card(
-                      //   elevation: 10,
-                      //   child: Padding(
-                      //     padding: const EdgeInsets.all(8.0),
-                      //     child: Column(
-                      //       mainAxisAlignment: MainAxisAlignment.start,
-                      //       crossAxisAlignment: CrossAxisAlignment.start,
-                      //       children: [
-                      //         Text(
-                      //           "Credentials : ",
-                      //           style: GoogleFonts.poppins(
-                      //             fontSize: 14,
-                      //             fontWeight: FontWeight.bold,
-                      //           ),
-                      //         ),
-                      //         const SizedBox(height: 2),
-                      //         Row(
-                      //           mainAxisAlignment:
-                      //               MainAxisAlignment.spaceBetween,
-                      //           crossAxisAlignment: CrossAxisAlignment.center,
-                      //           children: [
-                      //             Obx(
-                      //               () => Text(
-                      //                 "Email : ${controller.email.value}",
-                      //                 style: GoogleFonts.poppins(
-                      //                   fontSize: 14,
-                      //                   fontWeight: FontWeight.w300,
-                      //                 ),
-                      //               ),
-                      //             ),
-                      //             InkWell(
-                      //                 onTap: () async {
-                      //                   await Clipboard.setData(ClipboardData(
-                      //                       text: controller.email.value));
-                      //                 },
-                      //                 child: const Icon(
-                      //                   Icons.copy,
-                      //                   size: 14,
-                      //                 ))
-                      //           ],
-                      //         ),
-                      //         Row(
-                      //           mainAxisAlignment:
-                      //               MainAxisAlignment.spaceBetween,
-                      //           crossAxisAlignment: CrossAxisAlignment.center,
-                      //           children: [
-                      //             Obx(
-                      //               () => Text(
-                      //                 "Password : ${controller.password.value}",
-                      //                 style: GoogleFonts.poppins(
-                      //                   fontSize: 14,
-                      //                   fontWeight: FontWeight.w300,
-                      //                 ),
-                      //               ),
-                      //             ),
-                      //             InkWell(
-                      //                 onTap: () async {
-                      //                   await Clipboard.setData(ClipboardData(
-                      //                       text: controller.password.value));
-                      //                 },
-                      //                 child: const Icon(
-                      //                   Icons.copy,
-                      //                   size: 14,
-                      //                 ))
-                      //           ],
-                      //         ),
-                      //       ],
-                      //     ),
-                      //   ),
-                      // )
+                      Card(
+                        elevation: 10,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Credentials : ",
+                                style: GoogleFonts.poppins(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const SizedBox(height: 2),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Obx(
+                                    () => Text(
+                                      "Email : ${controller.email.value}",
+                                      style: GoogleFonts.poppins(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w300,
+                                      ),
+                                    ),
+                                  ),
+                                  InkWell(
+                                      onTap: () async {
+                                        await Clipboard.setData(ClipboardData(
+                                            text: controller.email.value));
+                                      },
+                                      child: const Icon(
+                                        Icons.copy,
+                                        size: 14,
+                                      ))
+                                ],
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Obx(
+                                    () => Text(
+                                      "Password : ${controller.password.value}",
+                                      style: GoogleFonts.poppins(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w300,
+                                      ),
+                                    ),
+                                  ),
+                                  InkWell(
+                                      onTap: () async {
+                                        await Clipboard.setData(ClipboardData(
+                                            text: controller.password.value));
+                                      },
+                                      child: const Icon(
+                                        Icons.copy,
+                                        size: 14,
+                                      ))
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
                     ]),
               ),
             )),

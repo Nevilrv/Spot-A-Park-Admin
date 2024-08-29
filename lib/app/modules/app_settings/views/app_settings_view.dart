@@ -448,13 +448,13 @@ class AppSettingsView extends StatelessWidget {
                                         .text
                                         .isNotEmpty) {
                                       ProgressLoader.showLoadingDialog();
-                                      Constant.constantModel
+                                      Constant.constantModel!
                                               .minimumAmountDeposit =
                                           appSettingsController
                                               .minimumDepositController
                                               .value
                                               .text;
-                                      setGeneralSetting(Constant.constantModel)
+                                      setGeneralSetting(Constant.constantModel!)
                                           .then((value) {
                                         Get.back();
                                         showSuccessToast(
@@ -509,13 +509,13 @@ class AppSettingsView extends StatelessWidget {
                                         .text
                                         .isNotEmpty) {
                                       ProgressLoader.showLoadingDialog();
-                                      Constant.constantModel
+                                      Constant.constantModel!
                                               .minimumAmountWithdraw =
                                           appSettingsController
                                               .minimumWithdrawalController
                                               .value
                                               .text;
-                                      setGeneralSetting(Constant.constantModel)
+                                      setGeneralSetting(Constant.constantModel!)
                                           .then((value) {
                                         Get.back();
                                         showSuccessToast(
@@ -604,12 +604,12 @@ class AppSettingsView extends StatelessWidget {
                                       .text
                                       .isNotEmpty) {
                                     ProgressLoader.showLoadingDialog();
-                                    Constant.constantModel.referralAmount =
+                                    Constant.constantModel!.referralAmount =
                                         appSettingsController
                                             .referralAmountController
                                             .value
                                             .text;
-                                    setGeneralSetting(Constant.constantModel)
+                                    setGeneralSetting(Constant.constantModel!)
                                         .then((value) {
                                       Get.back();
                                       showSuccessToast(
@@ -687,10 +687,10 @@ class AppSettingsView extends StatelessWidget {
                                   if (appSettingsController.mapRadiusController
                                       .value.text.isNotEmpty) {
                                     ProgressLoader.showLoadingDialog();
-                                    Constant.constantModel.radius =
+                                    Constant.constantModel!.radius =
                                         appSettingsController
                                             .mapRadiusController.value.text;
-                                    setGeneralSetting(Constant.constantModel)
+                                    setGeneralSetting(Constant.constantModel!)
                                         .then((value) {
                                       Get.back();
                                       showSuccessToast("Map radius updated");
